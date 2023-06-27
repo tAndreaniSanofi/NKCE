@@ -1,2 +1,2 @@
 # NKCE
-Notebook and computational analysis workstream for NK cell engager multi-modal data analysis (scRNA-seq+CITE-seq).
+Notebook and computational analysis workstream for NK cell engager multi-modal data analysis (scRNA-seq+CITE-seq). This repository contains command lines bioinformatics software run in parallel for the quantification of spliced and un-spliced reads on bam files for the RNA velocity analysis (La Manno et al 2019). Furthermore, it containts notebook to model the quantifed reads and conduct trajectories analysis.  
