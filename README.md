@@ -11,6 +11,6 @@ sbatch NKCE/Tools/Intron_Exon_Quantification.sh
 
 ### Loom are then used for trajectory analysis
 ```
-Rscript NKCE/Script/Velocyto.R
+Rscript NKCE/Script/Velocyto.R sample.loom /path/to/marker_genes.txt plot.pdf
 ```
 
