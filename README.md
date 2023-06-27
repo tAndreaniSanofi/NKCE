@@ -3,5 +3,11 @@ Notebook and computational analysis workstream for **NK cell engager multi-modal
 
 ### Analysis starts with exon and introns quantification
 ```
-sbatch  
+sbatch NKCE/Tools/Intron_Exon_Quantification.sh
 ```
+
+### Loom are then used for trajectory analysis
+```
+Rscript NKCE/Script/Velocyto.R
+```
+
