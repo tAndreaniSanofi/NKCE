@@ -9,7 +9,7 @@ The analysis run by activating the [AIDA-ODS](https://kb-am1.sanofi.com/display/
 sbatch NKCE/Tools/Intron_Exon_Quantification.sh
 ```
 
-### Loom are then used for trajectory analysis
+### Loom files are then used for trajectory analysis
 ```
 Rscript NKCE/Script/Velocyto.R sample.loom /path/to/marker_genes.txt plot.pdf
 ```
