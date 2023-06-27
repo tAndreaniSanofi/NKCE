@@ -78,15 +78,14 @@ main <- function(){
   #Visualize velocity on the t-SNE embedding, using velocity vector fields:
   show.velocity.on.embedding.cor(emb,rvel.cd,n=300,scale='sqrt',cell.colors=ac(cell.colors,alpha=0.5),cex=0.8,arrow.scale=5,show.grid.flow=TRUE,min.grid.cell.mass=0.5,grid.n=40,arrow.lwd=1,do.par=F,cell.border.alpha = 0.1)
 
-  
-  
-  intersect(rownames(emat),genesName)
-  gene <- "gene_of_interest"
-  gene.relative.velocity.estimates(emat,nmat,deltaT=1,kCells = 20,kGenes=1,fit.quantile=fit.quantile,cell.emb=emb,cell.colors=cell.colors,cell.dist=cell.dist,show.gene=gene,old.fit=rvel.cd,do.par=T)
-  intersect(rownames(emat),genesName)
-  print(Sample_8_annnotated_05_04)
+    
 }
 
+intersect(rownames(emat),genesName)
+gene <- "gene_of_interest"
+gene.relative.velocity.estimates(emat,nmat,deltaT=1,kCells = 20,kGenes=1,fit.quantile=fit.quantile,cell.emb=emb,cell.colors=cell.colors,cell.dist=cell.dist,show.gene=gene,old.fit=rvel.cd,do.par=T)
+intersect(rownames(emat),genesName)
+print(Sample_8_annnotated_05_04)
 
 #use the genes you prefer for cluster and trajectories annotation
 bright_markers <- c( "FCGR3A", "GZMB", "CD56", "GZMK", "SELL", "CD2", "CCR7", "NCAM1")
