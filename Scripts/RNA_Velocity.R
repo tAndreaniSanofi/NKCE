@@ -84,7 +84,7 @@ main <- function(){
   gene <- "gene_of_interest"
   gene.relative.velocity.estimates(emat,nmat,deltaT=1,kCells = 20,kGenes=1,fit.quantile=fit.quantile,cell.emb=emb,cell.colors=cell.colors,cell.dist=cell.dist,show.gene=gene,old.fit=rvel.cd,do.par=T)
   intersect(rownames(emat),genesName)
-  head(Sample_8_annnotated_05_04)
+  print(Sample_8_annnotated_05_04)
 }
 
 
