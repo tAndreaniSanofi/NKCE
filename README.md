@@ -1,5 +1,5 @@
 # NKCE
-Notebook and computational analysis workstream for **NK cell engager multi-modal data analysis (scRNA-seq+CITE-seq)**. The mRNA velocity is estimated based on [La Manno et al 2018](https://www.nature.com/articles/s41586-018-0414-6) on spliced and un-spliced reads for a group of genes that can explain whether the cell is in a differentiation state. Thus, this will allow to **model the quantifed reads and conduct trajectories analysis**.  
+Notebook and computational analysis workstream for **NK cell engager multi-modal data analysis (scRNA-seq+CITE-seq)**. The mRNA velocity is estimated based on [La Manno et al 2018](https://www.nature.com/articles/s41586-018-0414-6) on spliced and un-spliced reads for a group of genes that can explain the differentiation of a cell type to another cell type such as CD56dim to CIML. Thus, this will allow to **model the quantifed reads and conduct trajectories analysis**.  
 
 ### Basic information
 The analysis run by activating the [AIDA-ODS](https://kb-am1.sanofi.com/display/MP/AIDA-ODS) anconda image where the tools to run the analysis have been established. For a full list of packages please check [Sanofi confluence](https://kb-am1.sanofi.com/display/MP/AIDA-ODS) page.
