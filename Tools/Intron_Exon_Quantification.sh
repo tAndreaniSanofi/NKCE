@@ -20,7 +20,7 @@ export fileName=`sed -n "$SLURM_ARRAY_TASK_ID"p sample_file_names.txt`
 conda activate AIDA-ODS
 
 #sort bam file by name
-samtools sort -T /tmp/$fileName.sort -o $fileName.aln.sorted.bam $fileName.aln.bam;
-samtools index $fileName.aln.sorted.bam;
-velocyto run10x -m repeat_msk.gtf mypath_to_sorted_files/$fileName /annotation/refdata-cellranger-mm10-1.2.0/genes/genes.gtf;
+samtools sort -t CB -O BAM -@ 35 -o $fileName.cellsorted_possorted_genome_bam.bam $fileName.possorted_genome_bam.bam
+samtools index  $fileName.cellsorted_possorted_genome_bam.bam;
+velocyto run10x -m repeat_msk.gtf mypath_to_sorted_files/$fileName.cellsorted_possorted_genome_bam.bam /annotation/refdata-cellranger-mm10-1.2.0/genes/genes.gtf;
 
