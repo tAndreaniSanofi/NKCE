@@ -4,7 +4,7 @@ Notebook and computational analysis workstream for **NK cell engager multi-modal
 ### Basic information
 The analysis run by activating the [AIDA-ODS](https://kb-am1.sanofi.com/display/MP/AIDA-ODS) anconda image where the tools to run the analysis have been established. For a full list of packages please check [Sanofi confluence](https://kb-am1.sanofi.com/display/MP/AIDA-ODS) page.
 
-### Analysis starts with exon and introns quantification on Magellan. Initialize an instance with r6i.4xlarge capabilites with an ubuntu terminal.
+### Analysis starts with exon and introns quantification on Magellan. Initialize an instance with r6i.4xlarge capabilites with an ubuntu terminal and a SLURM cluster with 9 nodes.
 ```
 sbatch NKCE/Tools/Intron_Exon_Quantification.sh
 ```
